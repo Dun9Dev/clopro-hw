@@ -81,37 +81,30 @@ curl ifconfig.me
 
 ### Terraform output
 
-![terraform output](screenshots/terraform-output.png)
+![terraform output](https://github.com/Dun9Dev/clopro-hw/blob/main/img/Screenshot_8.png)
 
 ### Публичная ВМ: ping 8.8.8.8
-
-![public-vm-ping](screenshots/public-vm-ping.png)
-
 ### Публичная ВМ: curl ifconfig.me
 
-![public-vm-curl](screenshots/public-vm-curl.png)
+![public-vm-curl](https://github.com/Dun9Dev/clopro-hw/blob/main/img/Screenshot_1.png)
 
 ### Приватная ВМ: ping 8.8.8.8 (через jump host)
-
-![private-vm-ping](screenshots/private-vm-ping.png)
-
 ### Приватная ВМ: curl ifconfig.me (выход через NAT)
 
-![private-vm-curl](screenshots/private-vm-curl.png)
+![private-vm-curl](https://github.com/Dun9Dev/clopro-hw/blob/main/img/Screenshot_2.png)
 
 ## Очистка ресурсов
 
-```bash
-terraform destroy -auto-approve
-```
+Вот исправленный список с ссылками на файлы:
 
 ## Структура файлов
 
 | Файл | Назначение |
 |------|------------|
-| `provider.tf` | Настройка провайдера Yandex Cloud |
-| `variables.tf` | Переменные (токен, cloud_id, folder_id, зона) |
-| `network.tf` | VPC, подсети, таблица маршрутизации |
-| `instances.tf` | NAT-инстанс, публичная и приватная ВМ |
-| `outputs.tf` | Выходные переменные (IP адреса, команды SSH) |
+| [`provider.tf`](https://github.com/Dun9Dev/clopro-hw/blob/main/provider.tf) | Настройка провайдера Yandex Cloud |
+| [`variables.tf`](https://github.com/Dun9Dev/clopro-hw/blob/main/variables.tf) | Переменные (токен, cloud_id, folder_id, зона) |
+| [`network.tf`](https://github.com/Dun9Dev/clopro-hw/blob/main/network.tf) | VPC, подсети, таблица маршрутизации |
+| [`instances.tf`](https://github.com/Dun9Dev/clopro-hw/blob/main/instances.tf) | NAT-инстанс, публичная и приватная ВМ |
+| [`outputs.tf`](https://github.com/Dun9Dev/clopro-hw/blob/main/outputs.tf) | Выходные переменные (IP адреса, команды SSH) |
+
 
